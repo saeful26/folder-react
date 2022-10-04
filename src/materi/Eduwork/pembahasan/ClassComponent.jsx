@@ -1,22 +1,18 @@
 import React from "react";
 
 class ClassComponent extends React.Component {
-    constructor(props) {
-        super(props)
-
-        this.state = {
-            value: 0
-        }
-        this.handlePlus = this.handlePlus.bind(this);
-        this.handleMinus = this.handleMinus.bind(this);
+    state = {
+        value: 0
     }
 
-    handlePlus() {
+    handlePlus = () => {
         this.setState({value: this.state.value + 1})
     }
 
-    handleMinus() {
+    handleMinus =() => {
+        if(this.state.value > 0)
         this.setState({value: this.state.value - 1})
+    
     }
 
     render() {
