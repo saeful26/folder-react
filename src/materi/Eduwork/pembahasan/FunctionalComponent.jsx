@@ -2,7 +2,7 @@ const FunctionalComponent = ({nama}) => {
     
     return (
       <div>
-        <h1>Membuat komponen dengan Functional component</h1>
+        <h1>Komponen ini menggunakan Functionalcomponent</h1>
         <h2>Hello {nama},selamat belajar</h2>
       </div>
 
